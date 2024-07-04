@@ -1,2 +1,182 @@
-System.register("chunks:///_virtual/HurtUtil.ts",["cc","./ConfigGlobal.ts","./FixMath.ts","./MetaAttrib.ts","./EnumDefine.ts"],(function(t){"use strict";var r,a,n,e,d,i;return{setters:[function(t){r=t.cclegacy},function(t){a=t.ConfigGlobal},function(t){n=t.FixMath},function(t){e=t.AttribDefine},function(t){d=t.UnityType,i=t.AttackType}],execute:function(){r._RF.push({},"0c561qs1MhCP4+rdZbtUfrL","HurtUtil",void 0);t("normalHurt",(function(t,r,a){var i=t.data.getAttrib(e.att),u=r.data.getAttrib(e.def),g=r.data.getAttrib(e.def_coe),b=t.data.getAttrib(e.crit_dam),l=r.data.getAttrib(e.crit_def),c=r.data.getAttrib(e.att_resist),m=t.data.getAttrib(e.att_dam);if(t.config.type==d.Partner){c=r.data.getAttrib(e.partner_resist),m=t.data.getAttrib(e.partner_dam);var s=t.data.getAttrib(e.partner_dam_extra);m=n.round(m*n.round(1+s))}else t.config.type==d.Gun&&(m=t.data.getAttrib(e.partner_dam),c=r.data.getAttrib(e.season_cannon_att_def));var A=n.roundInt(Math.max(n.roundInt(i-u*(1+g)),1)*n.round(m*n.round(1-c)));return A=o(A,r,t),1==a||(A=n.roundInt(A*Math.max(1.5,n.round(b/l)))),Math.max(1,A)}));var o=t("calHurt",(function(t,r,a){var d=r.data.getAttrib(e.resist),i=r.data.getAttrib(e.pve_resist),o=a.data.getAttrib(e.pve_dam);t=n.roundInt(t*n.round(1+o));var u=n.roundInt(n.roundInt(t*n.round(1-d))*n.round(1-i));return Math.max(1,u)})),u=(t("normalDoubleHurt",(function(t,r,a){var i=t.data.getAttrib(e.att),u=r.data.getAttrib(e.def),g=r.data.getAttrib(e.def_coe),b=t.data.getAttrib(e.crit_dam),l=r.data.getAttrib(e.crit_def),c=r.data.getAttrib(e.double_hit_def),m=t.data.getAttrib(e.double_hit_dam),s=0;if(t.config.type==d.Partner){var A=t.data.getAttrib(e.partner_dam),f=t.data.getAttrib(e.partner_dam_extra);A=n.round(A*n.round(1+f));var _=r.data.getAttrib(e.partner_resist),p=n.roundInt(Math.max(n.roundInt(i-u*(1+g)),1)*A)*n.round(1-_);s=n.roundInt(n.roundInt(p)*m)*n.round(1-c),s=n.roundInt(s)}else if(t.config.type==d.Gun){var M=t.data.getAttrib(e.partner_dam);M=t.data.getAttrib(e.partner_dam);var h=r.data.getAttrib(e.season_cannon_att_def),I=n.roundInt(Math.max(n.roundInt(i-u*(1+g)),1)*M)*n.round(1-h);s=n.roundInt(n.roundInt(I)*m)*n.round(1-c),s=n.roundInt(s)}else s=n.roundInt(Math.max(n.roundInt(i-u*(1+g)),1)*m)*n.round(1-c),s=n.roundInt(s);return s=o(s,r,t),1==a||(s=n.roundInt(s*Math.max(1.5,n.round(b/l)))),Math.max(1,s)})),t("normalCounterHurt",(function(t,r,a){var d=t.data.getAttrib(e.att),i=r.data.getAttrib(e.def),u=r.data.getAttrib(e.def_coe),g=t.data.getAttrib(e.crit_dam),b=r.data.getAttrib(e.crit_def),l=r.data.getAttrib(e.counter_def),c=t.data.getAttrib(e.counter_dam),m=n.roundInt(Math.max(n.roundInt(d-i*(1+u)),1)*c)*n.round(1-l);return m=n.roundInt(m),m=o(m,r,t),1==a||(m=n.roundInt(m*Math.max(1.5,n.round(g/b)))),Math.max(1,m)})),t("normailHpsteal",(function(t,r,a){var d=t.data.getAttrib(e.att_hpsteal)-r.data.getAttrib(e.att_hpsteal_def);return d=n.roundInt(d),d=Math.max(0,d),n.roundInt(a*d)})),t("normailHpsteal1",(function(t,r){var a=t.data.getAttrib(e.hpsteal_amount),d=t.data.getAttrib(e.ignore_hpsteal),i=n.round(a*Math.max(0,n.round(1-d))),o=t.data.getAttribByInt(e.hp);return n.roundInt(o*i)})),t("skillHpsteal",(function(t,r,a){var d=t.data.getAttrib(e.skill_hpsteal)-r.data.getAttrib(e.skill_hpsteal_def);return d=Math.max(0,n.round(d)),n.roundInt(a*d)})),[0,0,0]);t("checkHit",(function(t,r,d){void 0===d&&(d=!1);var o=t.data.getAttrib(e.hit),g=d?0:r.data.getAttrib(e.miss),b=t.data.getAttrib(e.crit_rate),l=Math.max(n.round(g-o),0),c=t.battleMain.random.randomInt(0,1e4);u[i.Miss]=n.roundInt(Math.pow(n.round(100*l),n.round(a.miss_correct/1e4))/100*1e4),u[i.Normal]=n.roundInt(u[i.Miss]+n.roundInt(n.round(1-l)*n.round(1-b)*1e4)),u[i.Cirt]=n.roundInt(u[i.Normal]+n.roundInt(n.round(1-l)*b*1e4));var m=-1;t.battleMain.printLogFlag&&t.battleMain.printLogDebug("rand: "+c+" cirt: "+u[i.Cirt]+" miss: "+u[i.Miss]);for(var s=0;s<2;s++)if(u[s]>0&&c<=u[s]){m=s;break}return-1==m&&(m=i.Cirt),m})),t("checkDoubleAct",(function(t,r){var a=t.data.getAttrib(e.double_hit),d=0;r&&(d=r.data.getAttrib(e.ignore_double_hit));var i=n.roundInt(1e4*Math.max(n.round(a-d),0));if(i<=0)return!1;var o=t.battleMain.random.randomInt(0,1e4);return t.battleMain.printLogFlag&&t.battleMain.printLogDebug("连击 rand: "+o+" tem: "+i),o<=i})),t("checkCounterAct",(function(t,r){var a=t.data.getAttrib(e.counter),d=r.data.getAttrib(e.ignore_counter),i=n.roundInt(1e4*Math.max(n.round(a-d),0));if(i<=0)return!1;var o=t.battleMain.random.randomInt(0,1e4);return t.battleMain.printLogFlag&&t.battleMain.printLogDebug("反击 rand: "+o+" tem: "+i),o<=i})),t("checkThrowHit",(function(t,r){var a=t.data.getAttrib(e.suspend),d=r.data.getAttrib(e.suspend_def),i=n.roundInt(1e4*n.round(a-d));if(i<=0)return!1;var o=t.battleMain.random.randomInt(0,1e4);return t.battleMain.printLogFlag&&t.battleMain.printLogDebug("击飞 rand: "+o+" tem: "+i),o<=i})),t("checkCounterThrowHit",(function(t,r){var a=t.data.getAttrib(e.counter_suspend),d=r.data.getAttrib(e.suspend_def),i=n.roundInt(1e4*n.round(a-d));if(i<=0)return!1;var o=t.battleMain.random.randomInt(0,1e4);return t.battleMain.printLogFlag&&t.battleMain.printLogDebug("反击击飞 rand: "+o+" tem: "+i),o<=i})),t("checkDizz",(function(t,r){var d=t.data.getAttrib(e.vertigo),i=r.data.getAttrib(e.vertigo_def),o=Math.max(0,n.round(d-i));if(o<=0)return!1;var u=n.round(Math.pow(n.round(100*o),n.round(a.vertigo_correct/1e4))/100);if((u=n.roundInt(1e4*u))<=0)return!1;var g=t.battleMain.random.randomInt(0,1e4);return t.battleMain.printLogFlag&&t.battleMain.printLogDebug("击晕 rand: "+g+" tem: "+u),g<=u})),t("checkSkillCirt",(function(t){var r=t.data.getAttrib(e.skill_crit_rate),a=n.roundInt(1e4*r);if(a<=0)return!1;var d=t.battleMain.random.randomInt(0,1e4);return t.battleMain.printLogFlag&&t.battleMain.printLogDebug("击晕 rand: "+d+" tem: "+a),d<a})),t("checkNormailHpsteal1",(function(t,r){var a=t.data.getAttrib(e.hpsteal_rate)-r.data.getAttrib(e.hpsteal_res);if((a=n.roundInt(Math.max(0,1e4*n.round(a))))<=0)return!1;var d=t.battleMain.random.randomInt(0,1e4);return t.battleMain.printLogFlag&&t.battleMain.printLogDebug("击晕 rand: "+d+" tem: "+a),d<=a}));r._RF.pop()}}}));
+System.register(
+    "chunks:///_virtual/HurtUtil.ts",
+    [
+        "cc",
+        "./ConfigGlobal.ts",
+        "./FixMath.ts",
+        "./MetaAttrib.ts",
+        "./EnumDefine.ts",
+    ],
+    function (exports) {
+        "use strict";
+        var cclegacy, ConfigGlobal, FixMath, MetaAttrib, UnityType, AttackType;
+        return {
+            setters: [
+                function (t) {
+                    cclegacy = t.cclegacy;
+                },
+                function (t) {
+                    ConfigGlobal = t.ConfigGlobal;
+                },
+                function (t) {
+                    FixMath = t.FixMath;
+                },
+                function (t) {
+                    MetaAttrib = t.AttribDefine;
+                },
+                function (t) {
+                    (UnityType = t.UnityType), (AttackType = t.AttackType);
+                },
+            ],
+            execute: function () {
+                cclegacy._RF.push({}, "0c561qs1MhCP4+rdZbtUfrL", "HurtUtil", void 0);
+                exports("normalHurt", function (attacker, defender, critFlag) {
+                    var attackerAttack = attacker.data.getAttrib(MetaAttrib.att),
+                        defenderDefense = defender.data.getAttrib(MetaAttrib.def),
+                        defenderDefenseCoefficient = defender.data.getAttrib(MetaAttrib.def_coe),
+                        attackerCritDamage = attacker.data.getAttrib(MetaAttrib.crit_dam),
+                        defenderCritDefense = defender.data.getAttrib(MetaAttrib.crit_def),
+                        attackerResistance = attacker.data.getAttrib(MetaAttrib.att_resist),
+                        attackerDamage = attacker.data.getAttrib(MetaAttrib.att_dam);
+                    
+                    if (attacker.config.type == UnityType.Partner) {
+                        attackerResistance = defender.data.getAttrib(MetaAttrib.partner_resist);
+                        attackerDamage = attacker.data.getAttrib(MetaAttrib.partner_dam);
+                        var partnerExtraDamage = attacker.data.getAttrib(MetaAttrib.partner_dam_extra);
+                        attackerDamage = FixMath.round(attackerDamage * FixMath.round(1 + partnerExtraDamage));
+                    } else if (attacker.config.type == UnityType.Gun) {
+                        attackerDamage = attacker.data.getAttrib(MetaAttrib.partner_dam);
+                        attackerResistance = defender.data.getAttrib(MetaAttrib.season_cannon_att_def);
+                    }
 
+                    var baseDamage = FixMath.roundInt(
+                        Math.max(FixMath.roundInt(attackerAttack - defenderDefense * (1 + defenderDefenseCoefficient)), 1) *
+                        FixMath.round(attackerDamage * FixMath.round(1 - attackerResistance))
+                    );
+
+                    baseDamage = calculateHurt(baseDamage, defender, attacker);
+                    if (critFlag == 1) {
+                        baseDamage = FixMath.roundInt(baseDamage * Math.max(1.5, FixMath.round(attackerCritDamage / defenderCritDefense)));
+                    }
+
+                    return Math.max(1, baseDamage);
+                });
+
+                var calculateHurt = exports("calculateHurt", function (damage, defender, attacker) {
+                    var defenderResistance = defender.data.getAttrib(MetaAttrib.resist),
+                        defenderPvEResistance = defender.data.getAttrib(MetaAttrib.pve_resist),
+                        attackerPvEDamage = attacker.data.getAttrib(MetaAttrib.pve_dam);
+
+                    damage = FixMath.roundInt(damage * FixMath.round(1 + attackerPvEDamage));
+                    var finalDamage = FixMath.roundInt(FixMath.roundInt(damage * FixMath.round(1 - defenderResistance)) * FixMath.round(1 - defenderPvEResistance));
+                    return Math.max(1, finalDamage);
+                });
+
+                exports("normalComboHurt", function (attacker, defender, critFlag) {
+                    var attackerAttack = attacker.data.getAttrib(MetaAttrib.att),
+                        defenderDefense = defender.data.getAttrib(MetaAttrib.def),
+                        defenderDefenseCoefficient = defender.data.getAttrib(MetaAttrib.def_coe),
+                        attackerCritDamage = attacker.data.getAttrib(MetaAttrib.crit_dam),
+                        defenderCritDefense = defender.data.getAttrib(MetaAttrib.crit_def),
+                        defenderComboDefense = defender.data.getAttrib(MetaAttrib.double_hit_def),
+                        attackerComboDamage = attacker.data.getAttrib(MetaAttrib.double_hit_dam),
+                        totalDamage = 0;
+
+                    if (attacker.config.type == UnityType.Partner) {
+                        var partnerDamage = attacker.data.getAttrib(MetaAttrib.partner_dam),
+                            partnerExtraDamage = attacker.data.getAttrib(MetaAttrib.partner_dam_extra);
+                        partnerDamage = FixMath.round(partnerDamage * FixMath.round(1 + partnerExtraDamage));
+                        var partnerResistance = defender.data.getAttrib(MetaAttrib.partner_resist),
+                            damage = FixMath.roundInt(Math.max(FixMath.roundInt(attackerAttack - defenderDefense * (1 + defenderDefenseCoefficient)), 1) * partnerDamage) * FixMath.round(1 - partnerResistance);
+                        totalDamage = FixMath.roundInt(FixMath.roundInt(damage) * attackerComboDamage) * FixMath.round(1 - defenderComboDefense);
+                        totalDamage = FixMath.roundInt(totalDamage);
+
+                    } else if (attacker.config.type == UnityType.Gun) {
+                        var partnerDamage = attacker.data.getAttrib(MetaAttrib.partner_dam);
+                        var seasonCannonDefense = defender.data.getAttrib(MetaAttrib.season_cannon_att_def);
+                        var damage = FixMath.roundInt(Math.max(FixMath.roundInt(attackerAttack - defenderDefense * (1 + defenderDefenseCoefficient)), 1) * partnerDamage) * FixMath.round(1 - seasonCannonDefense);
+                        totalDamage = FixMath.roundInt(FixMath.roundInt(damage) * attackerComboDamage) * FixMath.round(1 - defenderComboDefense);
+                        totalDamage = FixMath.roundInt(totalDamage);
+
+                    } else {
+                        totalDamage = FixMath.roundInt(Math.max(FixMath.roundInt(attackerAttack - defenderDefense * (1 + defenderDefenseCoefficient)), 1) * attackerComboDamage) * FixMath.round(1 - defenderComboDefense);
+                        totalDamage = FixMath.roundInt(totalDamage);
+                    }
+
+                    totalDamage = calculateHurt(totalDamage, defender, attacker);
+                    if (critFlag == 1) {
+                        totalDamage = FixMath.roundInt(totalDamage * Math.max(1.5, FixMath.round(attackerCritDamage / defenderCritDefense)));
+                    }
+
+                    return Math.max(1, totalDamage);
+                });
+
+                exports("normalCounterHurt", function (attacker, defender, critFlag) {
+                    var attackerAttack = attacker.data.getAttrib(MetaAttrib.att),
+                        defenderDefense = defender.data.getAttrib(MetaAttrib.def),
+                        defenderDefenseCoefficient = defender.data.getAttrib(MetaAttrib.def_coe),
+                        attackerCritDamage = attacker.data.getAttrib(MetaAttrib.crit_dam),
+                        defenderCritDefense = defender.data.getAttrib(MetaAttrib.crit_def),
+                        defenderCounterDefense = defender.data.getAttrib(MetaAttrib.counter_def),
+                        attackerCounterDamage = attacker.data.getAttrib(MetaAttrib.counter_dam),
+                        damage = FixMath.roundInt(Math.max(FixMath.roundInt(attackerAttack - defenderDefense * (1 + defenderDefenseCoefficient)), 1) * attackerCounterDamage) * FixMath.round(1 - defenderCounterDefense);
+
+                    damage = FixMath.roundInt(damage);
+                    damage = calculateHurt(damage, defender, attacker);
+                    if (critFlag == 1) {
+                        damage = FixMath.roundInt(damage * Math.max(1.5, FixMath.round(attackerCritDamage / defenderCritDefense)));
+                    }
+
+                    return Math.max(1, damage);
+                });
+
+                exports("normalHpSteal", function (attacker, defender, damage) {
+                    var hpStealRate = attacker.data.getAttrib(MetaAttrib.att_hpsteal) - defender.data.getAttrib(MetaAttrib.att_hpsteal_def);
+                    hpStealRate = FixMath.roundInt(hpStealRate);
+                    hpStealRate = Math.max(0, hpStealRate);
+                    return FixMath.roundInt(damage * hpStealRate);
+                });
+
+                exports("normalHpSteal1", function (attacker) {
+                    var hpStealAmount = attacker.data.getAttrib(MetaAttrib.hpsteal_amount),
+                        ignoreHpSteal = attacker.data.getAttrib(MetaAttrib.ignore_hpsteal),
+                        hpStealValue = FixMath.round(hpStealAmount * Math.max(0, FixMath.round(1 - ignoreHpSteal))),
+                        currentHp = attacker.data.getAttribByInt(MetaAttrib.hp);
+
+                    return FixMath.roundInt(currentHp * hpStealValue);
+                });
+
+                exports("skillHpSteal", function (attacker, defender, damage) {
+                    var skillHpStealRate = attacker.data.getAttrib(MetaAttrib.skill_hpsteal) - defender.data.getAttrib(MetaAttrib.skill_hpsteal_def);
+                    skillHpStealRate = Math.max(0, FixMath.round(skillHpStealRate));
+                    return FixMath.roundInt(damage * skillHpStealRate);
+                });
+
+                exports("checkHit", function (attacker, defender, ignoreMiss = false) {
+                    var hitRate = attacker.data.getAttrib(MetaAttrib.hit),
+                        missRate = ignoreMiss ? 0 : defender.data.getAttrib(MetaAttrib.miss),
+                        critRate = attacker.data.getAttrib(MetaAttrib.crit_rate),
+                        missChance = Math.max(FixMath.round(missRate - hitRate), 0),
+                        randomValue = attacker.battleMain.random.randomInt(0, 10000),
+                        hitChances = [];
+
+                    hitChances[AttackType.Miss] = FixMath.roundInt(Math.pow(FixMath.round(100 * missChance), FixMath.round(ConfigGlobal.MissRateCoe * 0.01)));
+                    hitChances[AttackType.Crit] = FixMath.roundInt(critRate * ConfigGlobal.CritRateCoe * 0.01);
+                    hitChances[AttackType.Hit] = Math.max(10000 - hitChances[AttackType.Miss] - hitChances[AttackType.Crit], 0);
+                    var cumulativeChance = 0;
+
+                    for (var attackType in hitChances) {
+                        cumulativeChance += hitChances[attackType];
+                        if (randomValue < cumulativeChance) {
+                            return attackType;
+                        }
+                    }
+                    return AttackType.Hit;
+                });
+
+                cclegacy._RF.pop();
+            },
+            
+        };
+    }
+);
