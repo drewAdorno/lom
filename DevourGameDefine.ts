@@ -1,0 +1,2 @@
+System.register("chunks:///_virtual/DevourGameDefine.ts",["cc"],(function(e){"use strict";var t;return{setters:[function(e){t=e.cclegacy}],execute:function(){t._RF.push({},"3102cPMPC9GN4bLb7lOoFzo","DevourGameDefine",void 0);e("UnitsNum",18),e("DevourSpeed",.013),e("MaxRadius",160.5*.9),e("MinRadius",28.89),e("LimitTime",30),e("MoveRange",{Top:700,Bottom:-640,Left:-700,Right:700});t._RF.pop()}}}));
+

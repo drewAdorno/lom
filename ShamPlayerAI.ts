@@ -1,0 +1,2 @@
+System.register("chunks:///_virtual/ShamPlayerAI.ts",["./rollupPluginModLoBabelHelpers.js","cc","./IAIHandle.ts"],(function(t){"use strict";var e,n,c;return{setters:[function(t){e=t.inheritsLoose},function(t){n=t.cclegacy},function(t){c=t.IAIHandle}],execute:function(){n._RF.push({},"0de48PcFSBJQZxpTcR8Em+M","ShamPlayerAI",void 0);t("ShamPlayerAI",function(t){function n(){return t.apply(this,arguments)||this}return e(n,t),n.prototype.handleAction=function(){},n}(c));n._RF.pop()}}}));
+

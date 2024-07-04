@@ -1,0 +1,2 @@
+System.register("chunks:///_virtual/HorseDefine.ts",["cc"],(function(E){"use strict";var _;return{setters:[function(E){_=E.cclegacy}],execute:function(){_._RF.push({},"077a85mPvJPQY3JCkCBNB+X","HorseDefine",void 0);E("HorseEvent",{TYPE_HORSE_CHANGE:"TYPE_HORSE_CHANGE",TYPE_HORSE_SKIN_EFFECT_SEL:"TYPE_HORSE_SKIN_SKILL_SEL",TYPE_HORSE_ADD_EXP:"TYPE_HORSE_ADD_EXP",TYPE_HORSE_USE_SKILL:"TYPE_HORSE_USE_SKILL",TYPE_HORSE_ENABLE_INFO:"TYPE_HORSE_ENABLE_INFO"});_._RF.pop()}}}));
+

@@ -1,0 +1,2 @@
+System.register("chunks:///_virtual/CodeInviteDataCache.ts",["cc"],(function(t){"use strict";var i;return{setters:[function(t){i=t.cclegacy}],execute:function(){i._RF.push({},"a2366tHyqVCBYi/ZN+frSHs","CodeInviteDataCache",void 0);t("CodeInviteDataCache",function(){var t=i.prototype;function i(){this.inviteCode="123456",this.inviteState=1,this.inviteCount=0,this.inviteClaimList=[]}return t.clear=function(){},t.getRed=function(){for(var t=this.inviteCount>10?10:this.inviteCount,i=1;i<=t;i++)if(!this.inviteClaimList.includes(i))return 1;return 0},i}());i._RF.pop()}}}));
+

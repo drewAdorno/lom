@@ -1,0 +1,2 @@
+System.register("chunks:///_virtual/DrawModel.ts",["cc","./DrawDataCache.ts"],(function(t){"use strict";var e,r;return{setters:[function(t){e=t.cclegacy},function(t){r=t.DrawDataCache}],execute:function(){e._RF.push({},"d5fd8bixidAz7TYRDNm3F3V","DrawModel",void 0);t("DrawModel",function(){var t=e.prototype;function e(){}return t.clear=function(){},t.getDrawPoolList=function(){return IS(r).getPoolList()},e}());e._RF.pop()}}}));
+

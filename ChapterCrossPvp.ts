@@ -1,0 +1,2 @@
+System.register("chunks:///_virtual/ChapterCrossPvp.ts",["./rollupPluginModLoBabelHelpers.js","cc","./ChapterArena.ts"],(function(t){"use strict";var e,r,n;return{setters:[function(t){e=t.inheritsLoose},function(t){r=t.cclegacy},function(t){n=t.ChapterArena}],execute:function(){r._RF.push({},"6ab39vl4J1N7ZJ3ytcA6VXc","ChapterCrossPvp",void 0);t("ChapterCrossPvp",function(t){function r(){return t.apply(this,arguments)||this}return e(r,t),r.prototype.getConfig=function(t){return configCross_pvp_chapter.getDataByKey(t)},r}(n));r._RF.pop()}}}));
+

@@ -1,0 +1,2 @@
+System.register("chunks:///_virtual/GuildWarDefine.ts",["cc"],(function(_){"use strict";var e;return{setters:[function(_){e=_.cclegacy}],execute:function(){e._RF.push({},"7e322iF0JdMrYhVeKik4Meh","GuildWarDefine",void 0);_("GuildBossEventDefine",{TYPE_GUILD_WAR_SINGUP_SUCCESS:"TYPE_GUILD_WAR_SINGUP_SUCCESS",TYPE_GUILD_WAR_STAGE_UPDATE:"TYPE_GUILD_WAR_STAGE_UPDATE",TYPE_GUILD_WAR_WAIT_UPDATE:"TYPE_GUILD_WAR_WAIT_UPDATE",TYPE_SOLO_BOX_INFO_UPDATE:"TYPE_SOLO_BOX_INFO_UPDATE"});e._RF.pop()}}}));
+

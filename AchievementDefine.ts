@@ -1,0 +1,2 @@
+System.register("chunks:///_virtual/AchievementDefine.ts",["cc"],(function(e){"use strict";var t;return{setters:[function(e){t=e.cclegacy}],execute:function(){t._RF.push({},"532c2U5v9tC9Z+GJ7rWPFrT","AchievementDefine",void 0);e("AchievementDefine",{AchievementState:{Normal:0,Reward:1,Lock:2}}),e("AchievementEventDefine",{AchievementUpdate:"AchievementUpdate",AchievementRedUpdate:"AchievementRedUpdate",AccomplishmentUpdate:"AccomplishmentUpdate",AccomplishmentRedUpdate:"AccomplishmentRedUpdate"});t._RF.pop()}}}));
+

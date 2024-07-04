@@ -1,0 +1,2 @@
+System.register("chunks:///_virtual/SdkDataCache.ts",["cc"],(function(t){"use strict";var i;return{setters:[function(t){i=t.cclegacy}],execute:function(){i._RF.push({},"1aa1dNKhOFK65TTg+E4di+e","SdkDataCache",void 0);t("SdkDataCache",function(){function t(){this.wxSetting=void 0,this.video=void 0,this.gameid="1679900330996640",this.showrechage=!0,this.isSdkInit=!1,this.CurrentEditBox=void 0,this.ContackButton=void 0,this.LoadAdTimeOut=0}return t.prototype.clear=function(){this.isSdkInit=!1,this.wxSetting=null,this.video=null},t}());i._RF.pop()}}}));
+

@@ -1,0 +1,2 @@
+System.register("chunks:///_virtual/TowerGameDefine.ts",["cc"],(function(e){"use strict";var t;return{setters:[function(e){t=e.cclegacy}],execute:function(){var n;t._RF.push({},"5927fX0ubFC0alC/Mthdd1y","TowerGameDefine",void 0);e("TowerGameEventDefine",{TowerGameUpdateInfo:"TowerGameUpdateInfo"}),e("RoleBirthPoint",{x:0,y:0}),e("AttackRange",500),e("defaultPoint",3),e("MoveSpeed",100),e("bornTime",.5),e("HitRange",120),e("BirthPoint",((n={})[0]={x:300,y:500},n[1]={x:-300,y:500},n[2]={x:300,y:-500},n[3]={x:-300,y:-500},n));t._RF.pop()}}}));
+

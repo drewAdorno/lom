@@ -1,0 +1,2 @@
+System.register("chunks:///_virtual/SceneCamera7.ts",["cc"],(function(e){"use strict";var t,i;return{setters:[function(e){t=e.cclegacy,i=e.Vec3}],execute:function(){t._RF.push({},"f3d414T+iZOKrH1NZEXwJ0x","SceneCamera",void 0);e("SceneCamera",function(){function e(){this.nodeCamera=void 0,this.camera=void 0,this.follow=void 0,this.oriPos=new i}return e.prototype.setTarget=function(e,t){var i=e.position;this.oriPos.set(i.x,i.y,10).add(t),t&&this.oriPos.add(t),this.nodeCamera.position=this.oriPos},e}());t._RF.pop()}}}));
+

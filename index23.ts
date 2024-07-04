@@ -1,0 +1,2 @@
+System.register("chunks:///_virtual/index23.ts",["cc","./Timer.ts","./CoroutineMgr.ts"],(function(r){"use strict";var e,o;return{setters:[function(r){e=r.cclegacy},function(e){o=e.TimerGroup;var t={};t.TimerGroup=e.TimerGroup,t.TimerObj=e.TimerObj,r(t)},function(e){var o={};o.CoroutineGroup=e.CoroutineGroup,o.CoroutineMgr=e.CoroutineMgr,r(o)}],execute:function(){e._RF.push({},"30a6ePttrlFyLX/UbC5BuMn","index",void 0);r("normalTimer",new o("normal"));e._RF.pop()}}}));
+

@@ -1,0 +1,2 @@
+System.register("chunks:///_virtual/IAIHandle.ts",["cc","./Target.ts"],(function(t){"use strict";var n,e;return{setters:[function(t){n=t.cclegacy},function(t){e=t.TargetUnit}],execute:function(){n._RF.push({},"93fa17L57tEPJ905VceUU6S","IAIHandle",void 0);t("IAIHandle",function(){function t(){this.cast=void 0}return t.prototype.selectTarget=function(t){if(null==t)return!1;var n=this.cast;return n.wantTarget=e.toUnit(t),!(null==n.wantTarget||n.wantTarget.unit!=t)},t}());n._RF.pop()}}}));
+

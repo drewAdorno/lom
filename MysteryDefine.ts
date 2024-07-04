@@ -1,0 +1,2 @@
+System.register("chunks:///_virtual/MysteryDefine.ts",["cc"],(function(_){"use strict";var E;return{setters:[function(_){E=_.cclegacy}],execute:function(){E._RF.push({},"dafc3XOB71GyLpPjjMT2ELI","MysteryDefine",void 0);_("MysteryEventDefine",{AXE_RECOVER_UPDATE:"AXE_RECOVER_UPDATE",MINE_INFO_UPDATE:"MINE_INFO_UPDATE",MINE_BLOCK_GET_REWARD:"MINE_BLOCK_GET_REWARD",MINE_INFO_BACK:"MINE_INFO_BACK",MINE_AUTO_BACK:"MINE_AUTO_BACK"}),_("mine_row_count",7),_("mine_colomn_count",6);E._RF.pop()}}}));
+

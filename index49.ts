@@ -1,0 +1,2 @@
+System.register("chunks:///_virtual/index49.ts",["cc","./RankingRushMainView.ts","./RankingRushMainView_2.ts","./RankingRushView.ts","./RankingRushStoreView.ts"],(function(){"use strict";var n,e,i,u,t;return{setters:[function(e){n=e.cclegacy},function(n){e=n.default},function(n){i=n.default},function(n){u=n.default},function(n){t=n.default}],execute:function(){n._RF.push({},"5414fDw755EaL5m1r5A1NiY","index",void 0),ModuleInclude.RankingRushMainView=e,ModuleInclude.RankingRushMainView_2=i,ModuleInclude.RankingRushView=u,ModuleInclude.RankingRushStoreView=t,n._RF.pop()}}}));
+

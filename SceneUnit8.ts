@@ -1,0 +1,2 @@
+System.register("chunks:///_virtual/SceneUnit8.ts",["cc"],(function(t){"use strict";var i,e;return{setters:[function(t){i=t.cclegacy,e=t.Rect}],execute:function(){i._RF.push({},"cd6c6gmApNObYdR8EanVCnb","SceneUnit",void 0);t("SceneUnit",function(){function t(){this.id=void 0,this.uid=0,this.del=!1,this.isDestroy=!1,this.type=1,this.rect=new e,this.info=void 0}var i=t.prototype;return i.update=function(t){this.del||this.onUpdate(t)},i.destroy=function(){this.isDestroy||(this.isDestroy=!0,this.del=!0,this.onDestroy())},t}());i._RF.pop()}}}));
+

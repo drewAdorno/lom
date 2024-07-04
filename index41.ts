@@ -1,0 +1,2 @@
+System.register("chunks:///_virtual/index41.ts",["cc","./DrawControl.ts","./DrawMainView.ts","./PoolInfoView.ts","./DrawResultView.ts"],(function(){"use strict";var e,t,n,u,o;return{setters:[function(t){e=t.cclegacy},function(e){t=e.default},function(e){n=e.default},function(e){u=e.default},function(e){o=e.default}],execute:function(){e._RF.push({},"48461m+uQtNNpsWNbYR53a9","index",void 0),ModuleInclude.DrawMainView=n,ModuleInclude.PoolInfoView=u,ModuleInclude.DrawResultView=o,ISInclude.DrawControl=t,e._RF.pop()}}}));
+

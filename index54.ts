@@ -1,0 +1,2 @@
+System.register("chunks:///_virtual/index54.ts",["cc","./ShareControl.ts","./ShareModel.ts","./ShareActView.ts","./ShareView.ts"],(function(){"use strict";var e,t,n,u,c;return{setters:[function(t){e=t.cclegacy},function(e){t=e.default},function(e){n=e.ShareModel},function(e){u=e.default},function(e){c=e.default}],execute:function(){e._RF.push({},"6f0843AIYRDoYQuBBy5PL25","index",void 0),ModuleInclude.ShareView=c,ModuleInclude.ShareActView=u,ISInclude.ShareControl=t,ISInclude.ShareModel=n,e._RF.pop()}}}));
+

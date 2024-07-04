@@ -1,0 +1,2 @@
+System.register("chunks:///_virtual/LogUtil.ts",["cc"],(function(t){"use strict";var i,e;return{setters:[function(t){i=t.cclegacy,e=t.native}],execute:function(){i._RF.push({},"5cb45OTP+NEMYrS12CLGy2a","LogUtil",void 0),t("default",function(){function t(){}return t.UpdateLog=function(t){this.logstr=this.logstr+t+"\n";var i=e.fileUtils.getWritablePath()+"gamecaches/"+"log.txt";e.fileUtils.writeStringToFile(this.logstr,i)},t}()).logstr="",i._RF.pop()}}}));
+

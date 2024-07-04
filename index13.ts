@@ -1,0 +1,2 @@
+System.register("chunks:///_virtual/index13.ts",["cc","./NoticeControl.ts","./KeFuNoticeView.ts","./MaintainNoticeView.ts","./NoticeView.ts"],(function(){"use strict";var e,i,t,c,n;return{setters:[function(i){e=i.cclegacy},function(e){i=e.default},function(e){t=e.KeFuNoticeView},function(e){c=e.MaintainNoticeView},function(e){n=e.NoticeView}],execute:function(){e._RF.push({},"14312EYlvlNLI8gjJkVwPPW","index",void 0),ModuleInclude.NoticeView=n,ModuleInclude.MaintainNoticeView=c,ModuleInclude.KeFuNoticeView=t,ISInclude.NoticeCotrol=i,e._RF.pop()}}}));
+

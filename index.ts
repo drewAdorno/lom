@@ -1,0 +1,2 @@
+System.register("chunks:///_virtual/index.ts",["cc","./FloatADControl.ts","./FloatADIconView.ts","./FloatADView.ts"],(function(){"use strict";var t,e,n,o;return{setters:[function(e){t=e.cclegacy},function(t){e=t.default},function(t){n=t.default},function(t){o=t.default}],execute:function(){t._RF.push({},"04c2bGzk4tFTq/CH5ZT6rgV","index",void 0),ModuleInclude.FloatADView=o,ModuleInclude.FloatADIconView=n,ISInclude.FloatADControl=e,t._RF.pop()}}}));
+

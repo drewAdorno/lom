@@ -1,0 +1,2 @@
+System.register("chunks:///_virtual/ChapterCrossWar.ts",["./rollupPluginModLoBabelHelpers.js","cc","./ChapterArena.ts"],(function(t){"use strict";var e,r,n;return{setters:[function(t){e=t.inheritsLoose},function(t){r=t.cclegacy},function(t){n=t.ChapterArena}],execute:function(){r._RF.push({},"a4176xiiVlAVpFj5ve9an5e","ChapterCrossWar",void 0);t("ChapterCrossWar",function(t){function r(){return t.apply(this,arguments)||this}return e(r,t),r.prototype.getConfig=function(t){return configKf_war_chapter.getDataByKey(t)},r}(n));r._RF.pop()}}}));
+

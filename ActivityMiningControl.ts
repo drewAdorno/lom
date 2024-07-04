@@ -1,0 +1,2 @@
+System.register("chunks:///_virtual/ActivityMiningControl.ts",["cc"],(function(n){"use strict";var t;return{setters:[function(n){t=n.cclegacy}],execute:function(){t._RF.push({},"6d71b2fUWxKyaKV7X/k6agW","ActivityMiningControl",void 0);n("default",function(){var n=t.prototype;function t(){}return n.clear=function(){printLog("ActivityMiningControl")},n.onLogin=function(){},n.onReconnect=function(){},t}());t._RF.pop()}}}));
+

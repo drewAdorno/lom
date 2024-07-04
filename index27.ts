@@ -1,0 +1,2 @@
+System.register("chunks:///_virtual/index27.ts",["cc","./SurveyControl.ts","./SurveyView.ts","./SurveyInfoView.ts"],(function(){"use strict";var e,u,t,n;return{setters:[function(u){e=u.cclegacy},function(e){u=e.default},function(e){t=e.default},function(e){n=e.default}],execute:function(){e._RF.push({},"33368l/f3tE24Vh6dodtPz+","index",void 0),ModuleInclude.SurveyView=t,ModuleInclude.SurveyInfoView=n,ModuleInclude.SurveyControl=u,ISInclude.SurveyControl=u,e._RF.pop()}}}));
+

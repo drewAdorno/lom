@@ -1,0 +1,2 @@
+System.register("chunks:///_virtual/TeamDataCache.ts",["cc"],(function(t){"use strict";var e;return{setters:[function(t){e=t.cclegacy}],execute:function(){e._RF.push({},"c8c0drEG5dOVIqydAjpG5ln","TeamDataCache",void 0);t("TeamDataCache",function(){function t(){this.team_id=void 0,this.team_type=void 0,this.leader_id=void 0,this.state=void 0,this.member_list=[],this.teamDiff=void 0,this.max_diff=void 0,this.cacheMember_list=[],this.apply_list=[]}return t.prototype.clear=function(){},t}());e._RF.pop()}}}));
+

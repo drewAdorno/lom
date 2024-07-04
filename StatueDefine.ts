@@ -1,0 +1,2 @@
+System.register("chunks:///_virtual/StatueDefine.ts",["cc"],(function(_){"use strict";var A;return{setters:[function(_){A=_.cclegacy}],execute:function(){A._RF.push({},"62503NctZtP57vVCpICSoWy","StatueDefine",void 0);_("StatueEventDefine",{HOME_FARM_STATUE_INFO_BACK:"HOME_FARM_STATUE_INFO_BACK",HOME_FARM_STATUE_UPDATE_BUFF_LOCK:"HOME_FARM_STATUE_UPDATE_BUFF_LOCK",HOME_FARM_STATUE_UPDATE_TAB_NAME:"HOME_FARM_STATUE_UPDATE_TAB_NAME",HOME_FARM_STATUE_UPDATE_TAB_IDX:"HOME_FARM_STATUE_UPDATE_TAB_IDX"});A._RF.pop()}}}));
+

@@ -1,0 +1,2 @@
+System.register("chunks:///_virtual/ChapterArenaServer.ts",["./rollupPluginModLoBabelHelpers.js","cc","./index94.ts","./ChapterArena.ts"],(function(e){"use strict";var t,r,n;return{setters:[function(e){t=e.inheritsLoose},function(e){r=e.cclegacy},null,function(e){n=e.ChapterArena}],execute:function(){r._RF.push({},"ed8d2yx5A1KsJqO/rsFaDRZ","ChapterArenaServer",void 0);e("ChapterArenaServer",function(e){function r(){return e.apply(this,arguments)||this}return t(r,e),r.prototype.toResult=function(e,t){void 0===t&&(t=!1),this.battleMain.toResult(e,t)},r}(n));r._RF.pop()}}}));
+

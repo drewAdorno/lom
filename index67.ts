@@ -1,0 +1,2 @@
+System.register("chunks:///_virtual/index67.ts",["cc","./StatueControl.ts","./StatueDetailView.ts","./StatueRenameView.ts","./StatueView.ts"],(function(){"use strict";var t,e,u,n,i;return{setters:[function(e){t=e.cclegacy},function(t){e=t.default},function(t){u=t.StatueDetailView},function(t){n=t.default},function(t){i=t.StatueView}],execute:function(){t._RF.push({},"98424JFsWxC35UPZXFBd4Pn","index",void 0),ModuleInclude.StatueView=i,ModuleInclude.StatueDetailView=u,ModuleInclude.StatueRenameView=n,ISInclude.StatueCotrol=e,t._RF.pop()}}}));
+

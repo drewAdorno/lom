@@ -1,0 +1,2 @@
+System.register("chunks:///_virtual/SkillHandleThiefNormal.ts",["./rollupPluginModLoBabelHelpers.js","cc","./SkillHandleBase.ts"],(function(e){"use strict";var n,i,l;return{setters:[function(e){n=e.inheritsLoose},function(e){i=e.cclegacy},function(e){l=e.SkillHandleBase}],execute:function(){i._RF.push({},"072cd1kAzZEHZG10RJgwMEj","SkillHandleThiefNormal",void 0);e("SkillHandleThiefNormal",function(e){function i(){return e.apply(this,arguments)||this}return n(i,e),i.prototype.beginRun=function(){this.runner.changeModeAction(!0,"skill1",1)},i}(l));i._RF.pop()}}}));
+

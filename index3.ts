@@ -1,0 +1,2 @@
+System.register("chunks:///_virtual/index3.ts",["cc","./EaseMethod.ts","./Tween.ts"],(function(e){"use strict";var n,t;return{setters:[function(e){n=e.cclegacy},function(n){var t={};t.EasingMethod=n.EasingMethod,t.easingFn=n.easingFn,e(t)},function(n){t=n.TweenGroup;var o={};o.Tween=n.Tween,o.TweenGroup=n.TweenGroup,e(o)}],execute:function(){n._RF.push({},"0735aGOtsxLOL4bA6BWbtGd","index",void 0),("undefined"==typeof window?global:window).normalTween=new t("normal"),n._RF.pop()}}}));
+

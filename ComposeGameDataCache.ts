@@ -1,0 +1,2 @@
+System.register("chunks:///_virtual/ComposeGameDataCache.ts",["cc"],(function(t){"use strict";var e,n,s;return{setters:[function(t){e=t.cclegacy,n=t.Vec3,s=t.randomRangeInt}],execute:function(){e._RF.push({},"2086eiDJX9HMYl4gHJKm6Fi","ComposeGameDataCache",void 0);t("default",function(){function t(){this.enterPos=new n(s(-120,120),s(-590,82)),this.mapPos=new n(-350,-50,0),this.act_list={},this.roleMap={},this.monsterMap={}}return t.prototype.clear=function(){},t}());e._RF.pop()}}}));
+

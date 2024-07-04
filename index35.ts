@@ -1,0 +1,2 @@
+System.register("chunks:///_virtual/index35.ts",["cc","./SevenLoginControl.ts","./SevenLoginView.ts"],(function(){"use strict";var e,n,t;return{setters:[function(n){e=n.cclegacy},function(e){n=e.default},function(e){t=e.default}],execute:function(){e._RF.push({},"3f98a+KrW1H5qtP0jaGyOlN","index",void 0),ModuleInclude.SevenLoginView=t,ModuleInclude.SevenLoginControl=n,ISInclude.SevenLoginControl=n,e._RF.pop()}}}));
+

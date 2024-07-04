@@ -1,0 +1,2 @@
+System.register("chunks:///_virtual/index14.ts",["cc","./MailView.ts","./MailDetailView.ts","./MailControl.ts"],(function(){"use strict";var e,t,i,n;return{setters:[function(t){e=t.cclegacy},function(e){t=e.default},function(e){i=e.default},function(e){n=e.default}],execute:function(){e._RF.push({},"16679KkXIhKfKgs74Cs550O","index",void 0),ModuleInclude.MailView=t,ModuleInclude.MailDetailView=i,ISInclude.MailControl=n,e._RF.pop()}}}));
+
